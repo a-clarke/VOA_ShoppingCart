@@ -47,6 +47,7 @@
     <Compile Include="ConsoleOutput.cs" />
     <Compile Include="CustomOrders.cs" />
     <Compile Include="Fruit.cs" />
+    <Compile Include="Offers.cs" />
     <Compile Include="Orders.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -14,5 +14,27 @@ namespace VOA_CheckoutApp
 
             return answer;
         }
+
+        public decimal DivideByTwo(decimal cost)
+        {
+            var answer = cost / 2;
+
+            return answer;
+        }
+
+        public decimal DivideByThree(decimal cost)
+        {
+            var answer = cost / 3;
+            var rounderAnswer = Math.Round(answer, 2, MidpointRounding.AwayFromZero);
+
+            return answer;
+        }
+
+        public decimal Subtraction(decimal totalCost, decimal cost)
+        {
+            var answer = totalCost - cost;
+
+            return answer;
+        }
     }
 }

@@ -8,9 +8,18 @@ namespace VOA_CheckoutApp
 {
     class ConsoleOutput
     {
-        public string OrderInformation(string fruit, string location, string cost)
+        public string OrderInformation(string fruit, string location, string cost, bool discount)
         {
-            string orderDescription = $"Cost of {fruit} for {location} is {cost}";
+            string orderDescription = "";
+
+            if(discount == false)
+            {
+                orderDescription = $"Cost of {fruit} for {location} is {cost}";
+            }
+            else
+            {
+                orderDescription = $"Discounted cost of {fruit} for {location} is {cost}";
+            }
 
             return orderDescription;
         }
